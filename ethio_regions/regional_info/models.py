@@ -13,3 +13,6 @@ class RegionalInfo(models.Model):
     map=models.ImageField(upload_to='map')
     website=models.URLField()
     
+    def __str__(self):
+        return self.region_name
+    
